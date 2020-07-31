@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home6</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/user_dashboard_nav.min.css">
+    <link rel="stylesheet" href="assets/css/user_dashboard.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+</head>
+
+<body><style>
+body {
+  background-color: #74EBD5;
+  background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  width: 5px;
+  background: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 1em;
+  background-color: #ddd;
+  outline: 1px solid slategrey;
+  border-radius: 1rem;
+}
+
+.text-small {
+  font-size: 0.9rem;
+}
+
+.messages-box,
+.chat-box {
+  height: 510px;
+  overflow-y: scroll;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+input::placeholder {
+  font-size: 0.9rem;
+  color: #999;
+}
+</style>
+
+<div class="container-fluid">
+      <div class="row">
+        <!-- Main Sidebar -->
+        <aside class="main-sidebar col-12 col-md-3 col-lg-2 px-0">
+          <div class="main-navbar">
+            <nav class="navbar align-items-stretch navbar-light bg-white flex-md-nowrap border-bottom p-0">
+              <a class="navbar-brand w-100 mr-0" href="#" style="line-height: 25px;">
+                <div class="d-table m-auto">
+                  <!-- <img id="main-logo" class="d-inline-block align-top mr-1" style="max-width: 25px;" src="images/shards-dashboards-logo.svg" alt="Shards Dashboard"> -->
+                  <span class="d-none d-md-inline ml-1">Owner's Messages</span>
+                </div>
+              </a>
+            </nav>
+          </div>
+          <div class="nav-wrapper">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link " href="user_Dashboard.html">
+                  <i class="material-icons">edit</i>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+               <li class="nav-item ">
+                <a class="nav-link " href="user_profile.html">
+                  <i class="material-icons">person</i>
+                  <span>Profile</span>
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link " href="#">
+                  <i class="material-icons">vertical_split</i>
+                  <span>Messages</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="add-new-post.html">
+                  <i class="material-icons">note_add</i>
+                  <span>Notifications</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="form-components.html">
+                  <i class="material-icons">view_module</i>
+                  <span>Photos</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="tables.html">
+                  <i class="material-icons">table_chart</i>
+                  <span>Paytments</span>
+                </a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link " href="errors.html">
+                  <i class="material-icons text-danger"></i>
+                  <span>Logout</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <!-- End Main Sidebar -->
+        <main class="main-content col-lg-10 col-md-9 col-sm-12 p-0 offset-lg-2 offset-md-3">
+          <div class="main-navbar sticky-top bg-white">
+            <!-- Main Navbar -->
+             <nav class="navbar align-items-stretch navbar-light flex-md-nowrap p-0">
+              <div class="main-navbar__search w-100 d-none d-md-flex d-lg-flex"></div>
+
+                <div class="mr-5 mt-3">
+                <a class="nav-item" href="Find_Sitter.html">
+                  <span>Find&nbsp;Sitter</span>
+                </a>
+              </div>
+              
+              <div class="mr-2 mt-3">
+                <a class="nav-item" href="index.html">
+                  <span>Home</span>
+                </a>
+              </div>
+                
+                
+              <ul class="navbar-nav border-left flex-row ">
+                
+
+                <!-- Notification -->
+               
+
+                <li class="nav-item border-right dropdown notifications">
+                  <a class="nav-link nav-link-icon text-center" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown">
+                    <div class="nav-link-icon__wrapper">
+                      <i class="material-icons"></i>
+                      <span class="badge badge-pill badge-danger">2</span>
+                    </div>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-small" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">
+                      
+                     <!--  <div class="notification__content">
+                        <span class="notification__category">Analytics</span>
+                        <p>Your website’s active users count increased by
+                          <span class="text-success text-semibold">28%</span> in the last week. Great job!</p>
+                      </div> -->
+                    </a>
+                    <a class="dropdown-item" href="#">
+                     
+                      <!-- <div class="notification__content">
+                        <span class="notification__category">Sales</span>
+                        <p>Last week your store’s sales count decreased by
+                          <span class="text-danger text-semibold">5.52%</span>. It could have been worse!</p>
+                      </div> -->
+                    </a>
+                    <a class="dropdown-item notification__all text-center" href="user_notification.html"> View all Notifications </a>
+                  </div>
+                </li>
+
+                <!-- Right profile -->
+
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-nowrap px-3" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <img class="user-avatar rounded-circle mr-2" src="assets/img/beach.jpg" alt="User Avatar">
+                    <span class="d-none d-md-inline-block">User's Name</span>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-small">
+                    <a class="dropdown-item" href="user_Dashboard.html">
+                      <i class="material-icons">note_add</i> Dashboard</a>
+                    <a class="dropdown-item" href="user_profile.html">
+                      <i class="material-icons"></i> Profile</a>
+                    <a class="dropdown-item" href="#">
+                      <i class="material-icons">vertical_split</i>Message</a>
+                    
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item text-danger" href="#">
+                      <i class="material-icons text-danger"></i> Logout </a>
+                  </div>
+                </li>
+
+
+              </ul>
+
+              <nav class="nav">
+                <a href="#" class="nav-link nav-link-icon toggle-sidebar d-md-inline d-lg-none text-center border-left" data-toggle="collapse" data-target=".header-navbar" aria-expanded="false" aria-controls="header-navbar">
+                  <i class="material-icons"></i>
+                </a>
+              </nav>
+            </nav>
+          </div>
+          <!-- / .main-navbar -->
+
+
+
+         <!--  <div class="alert alert-success alert-dismissible fade show mb-0" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <i class="fa fa-check mx-2"></i>
+            <strong>Success!</strong> Your profile has been updated! </div> -->
+
+          <div class="main-content-container container-fluid px-4">
+            <!-- Page Header -->
+
+            <div class="page-header row no-gutters py-4">
+              <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
+                <span class="text-uppercase page-subtitle">Overview</span>
+                <h3 class="page-title">Messages</h3>
+              </div>
+            </div>
+
+            <!-- End Page Header -->
+            <!-- Default Light Table -->
+            <div class="row mt-n5">
+              <div class="container py-5 px-4">
+                <!-- For demo purpose-->
+
+
+                <div class="row rounded-lg overflow-hidden shadow">
+                  <!-- Users box-->
+
+
+                  <div class="col-5 px-0">
+                    <div class="bg-white">
+
+                      <div class="bg-gray px-4 py-2 bg-light">
+                        <p class="h5 mb-0 py-1">Recent</p>
+                      </div>
+
+                      <div class="messages-box">
+                        <div class="list-group rounded-0">
+                          <a class="list-group-item list-group-item-action active text-white rounded-0">
+                            <div class="media"><img src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg" alt="user" width="50" class="rounded-circle">
+                              <div class="media-body ml-4">
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                  <h6 class="mb-0">Jason Doe</h6><small class="small font-weight-bold">25 Dec</small>
+                                </div>
+                                <p class="font-italic mb-0 text-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                              </div>
+                            </div>
+                          </a>
+
+                          <a href="#" class="list-group-item list-group-item-action list-group-item-light rounded-0">
+                            <div class="media"><img src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg" alt="user" width="50" class="rounded-circle">
+                              <div class="media-body ml-4">
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                  <h6 class="mb-0">Jason Doe</h6><small class="small font-weight-bold">14 Dec</small>
+                                </div>
+                                <p class="font-italic text-muted mb-0 text-small">Lorem ipsum dolor sit amet, consectetur. incididunt ut labore.</p>
+                              </div>
+                            </div>
+                          </a>
+
+                          <a href="#" class="list-group-item list-group-item-action list-group-item-light rounded-0">
+                            <div class="media"><img src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg" alt="user" width="50" class="rounded-circle">
+                              <div class="media-body ml-4">
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                  <h6 class="mb-0">Jason Doe</h6><small class="small font-weight-bold">9 Nov</small>
+                                </div>
+                                <p class="font-italic text-muted mb-0 text-small">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                              </div>
+                            </div>
+                          </a>
+
+                          <a href="#" class="list-group-item list-group-item-action list-group-item-light rounded-0">
+                            <div class="media"><img src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg" alt="user" width="50" class="rounded-circle">
+                              <div class="media-body ml-4">
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                  <h6 class="mb-0">Jason Doe</h6><small class="small font-weight-bold">18 Oct</small>
+                                </div>
+                                <p class="font-italic text-muted mb-0 text-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                              </div>
+                            </div>
+                          </a>
+
+                          <a href="#" class="list-group-item list-group-item-action list-group-item-light rounded-0">
+                            <div class="media"><img src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg" alt="user" width="50" class="rounded-circle">
+                              <div class="media-body ml-4">
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                  <h6 class="mb-0">Jason Doe</h6><small class="small font-weight-bold">17 Oct</small>
+                                </div>
+                                <p class="font-italic text-muted mb-0 text-small">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                              </div>
+                            </div>
+                          </a>
+
+                          <a href="#" class="list-group-item list-group-item-action list-group-item-light rounded-0">
+                            <div class="media"><img src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg" alt="user" width="50" class="rounded-circle">
+                              <div class="media-body ml-4">
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                  <h6 class="mb-0">Jason Doe</h6><small class="small font-weight-bold">2 Sep</small>
+                                </div>
+                                <p class="font-italic text-muted mb-0 text-small">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                              </div>
+                            </div>
+                          </a>
+
+                          <a href="#" class="list-group-item list-group-item-action list-group-item-light rounded-0">
+                            <div class="media"><img src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg" alt="user" width="50" class="rounded-circle">
+                              <div class="media-body ml-4">
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                  <h6 class="mb-0">Jason Doe</h6><small class="small font-weight-bold">30 Aug</small>
+                                </div>
+                                <p class="font-italic text-muted mb-0 text-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                              </div>
+                            </div>
+                          </a>
+
+                          <a href="#" class="list-group-item list-group-item-action list-group-item-light rounded-0">
+                            <div class="media"><img src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg" alt="user" width="50" class="rounded-circle">
+                              <div class="media-body ml-4">
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                  <h6 class="mb-0">Jason Doe</h6><small class="small font-weight-bold">21 Aug</small>
+                                </div>
+                                <p class="font-italic text-muted mb-0 text-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                              </div>
+                            </div>
+                          </a>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+                  
+                  <!-- Chat Box-->
+                  <div class="col-7 px-0">
+                    <div class="px-4 py-5 chat-box bg-white">
+                      <!-- Sender Message-->
+                      <div class="media w-50 mb-3"><img src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg" alt="user" width="50" class="rounded-circle">
+                        <div class="media-body ml-3">
+                          <div class="bg-light rounded py-2 px-3 mb-2">
+                            <p class="text-small mb-0 text-muted">Test which is a new approach all solutions</p>
+                          </div>
+                          <p class="small text-muted">12:00 PM | Aug 13</p>
+                        </div>
+                      </div>
+
+                      <!-- Reciever Message-->
+                      <div class="media w-50 ml-auto mb-3">
+                        <div class="media-body">
+                          <div class="bg-primary rounded py-2 px-3 mb-2">
+                            <p class="text-small mb-0 text-white">Test which is a new approach to have all solutions</p>
+                          </div>
+                          <p class="small text-muted">12:00 PM | Aug 13</p>
+                        </div>
+                      </div>
+
+                      <!-- Sender Message-->
+                      <div class="media w-50 mb-3"><img src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg" alt="user" width="50" class="rounded-circle">
+                        <div class="media-body ml-3">
+                          <div class="bg-light rounded py-2 px-3 mb-2">
+                            <p class="text-small mb-0 text-muted">Test, which is a new approach to have</p>
+                          </div>
+                          <p class="small text-muted">12:00 PM | Aug 13</p>
+                        </div>
+                      </div>
+
+                      <!-- Reciever Message-->
+                      <div class="media w-50 ml-auto mb-3">
+                        <div class="media-body">
+                          <div class="bg-primary rounded py-2 px-3 mb-2">
+                            <p class="text-small mb-0 text-white">Apollo University, Delhi, India Test</p>
+                          </div>
+                          <p class="small text-muted">12:00 PM | Aug 13</p>
+                        </div>
+                      </div>
+
+                      <!-- Sender Message-->
+                      <div class="media w-50 mb-3"><img src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg" alt="user" width="50" class="rounded-circle">
+                        <div class="media-body ml-3">
+                          <div class="bg-light rounded py-2 px-3 mb-2">
+                            <p class="text-small mb-0 text-muted">Test, which is a new approach</p>
+                          </div>
+                          <p class="small text-muted">12:00 PM | Aug 13</p>
+                        </div>
+                      </div>
+
+                      <!-- Reciever Message-->
+                      <div class="media w-50 ml-auto mb-3">
+                        <div class="media-body">
+                          <div class="bg-primary rounded py-2 px-3 mb-2">
+                            <p class="text-small mb-0 text-white">Apollo University, Delhi, India Test</p>
+                          </div>
+                          <p class="small text-muted">12:00 PM | Aug 13</p>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <!-- Typing area -->
+                    <form action="#" class="bg-light">
+                      <div class="input-group">
+                        <input type="text" placeholder="Type a message" aria-describedby="button-addon2" class="form-control rounded-0 border-0 py-4 bg-light">
+                        <div class="input-group-append">
+                          <button id="button-addon2" type="submit" class="btn btn-link"> <i class="fa fa-paper-plane"></i></button>
+                        </div>
+                      </div>
+                    </form>
+
+                  </div>
+                </div>
+              </div>
+                
+                
+              
+            </div>
+                 
+             
+            <!-- End Default Light Table -->
+            </div>
+         
+        </main>
+      </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sharrre/2.0.1/jquery.sharrre.min.js"></script>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="assets/js/script.min.js"></script>
+    <script src="assets/js/user_dashboard_nav.min.js"></script>
+    <script src="assets/js/user_dashboard.min.js"></script>
+</body>
+
+</html>

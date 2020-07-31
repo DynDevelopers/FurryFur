@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>User_profile</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/user_dashboard_nav.min.css">
+    <link rel="stylesheet" href="assets/css/user_dashboard.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+</head>
+
+<body><style>
+body {
+  background-color: #74EBD5;
+  background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+
+  min-height: 100vh;
+}
+</style>
+<div class="container-fluid">
+      <div class="row">
+        <!-- Main Sidebar -->
+        <aside class="main-sidebar col-12 col-md-3 col-lg-2 px-0">
+          <div class="main-navbar">
+            <nav class="navbar align-items-stretch navbar-light bg-white flex-md-nowrap border-bottom p-0">
+              <a class="navbar-brand w-100 mr-0" href="#" style="line-height: 25px;">
+                <div class="d-table m-auto">
+                  <!-- <img id="main-logo" class="d-inline-block align-top mr-1" style="max-width: 25px;" src="images/shards-dashboards-logo.svg" alt="Shards Dashboard"> -->
+                  <span class="d-none d-md-inline ml-1">Owner's Profile</span>
+                </div>
+              </a>
+            </nav>
+          </div>
+          <div class="nav-wrapper">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link " href="user_Dashboard.html">
+                  <i class="material-icons">edit</i>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+               <li class="nav-item active">
+                <a class="nav-link " href="#">
+                  <i class="material-icons">person</i>
+                  <span>Profile</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="user_message.html">
+                  <i class="material-icons">vertical_split</i>
+                  <span>Messages</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="add-new-post.html">
+                  <i class="material-icons">note_add</i>
+                  <span>Notifications</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="form-components.html">
+                  <i class="material-icons">view_module</i>
+                  <span>Photos</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="tables.html">
+                  <i class="material-icons">table_chart</i>
+                  <span>Paytments</span>
+                </a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link " href="errors.html">
+                  <i class="material-icons text-danger"></i>
+                  <span>Logout</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <!-- End Main Sidebar -->
+        <main class="main-content col-lg-10 col-md-9 col-sm-12 p-0 offset-lg-2 offset-md-3">
+          <div class="main-navbar sticky-top bg-white">
+            <!-- Main Navbar -->
+             <nav class="navbar align-items-stretch navbar-light flex-md-nowrap p-0">
+              <div class="main-navbar__search w-100 d-none d-md-flex d-lg-flex"></div>
+
+                <div class="mr-5 mt-3">
+                <a class="nav-item" href="Find_Sitter.html">
+                  <span>Find&nbsp;Sitter</span>
+                </a>
+              </div>
+              
+              <div class="mr-2 mt-3">
+                <a class="nav-item" href="index.html">
+                  <span>Home</span>
+                </a>
+              </div>
+                
+                
+              <ul class="navbar-nav border-left flex-row ">
+                
+
+                <!-- Notification -->
+               
+
+                <li class="nav-item border-right dropdown notifications">
+                  <a class="nav-link nav-link-icon text-center" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown">
+                    <div class="nav-link-icon__wrapper">
+                      <i class="material-icons"></i>
+                      <span class="badge badge-pill badge-danger">2</span>
+                    </div>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-small" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">
+                      
+                     <!--  <div class="notification__content">
+                        <span class="notification__category">Analytics</span>
+                        <p>Your website’s active users count increased by
+                          <span class="text-success text-semibold">28%</span> in the last week. Great job!</p>
+                      </div> -->
+                    </a>
+                    <a class="dropdown-item" href="#">
+                     
+                      <!-- <div class="notification__content">
+                        <span class="notification__category">Sales</span>
+                        <p>Last week your store’s sales count decreased by
+                          <span class="text-danger text-semibold">5.52%</span>. It could have been worse!</p>
+                      </div> -->
+                    </a>
+                    <a class="dropdown-item notification__all text-center" href="user_notification.html"> View all Notifications </a>
+                  </div>
+                </li>
+
+                <!-- Right profile -->
+
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-nowrap px-3" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <img class="user-avatar rounded-circle mr-2" src="assets/img/beach.jpg" alt="User Avatar">
+                    <span class="d-none d-md-inline-block">User's Name</span>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-small">
+                    <a class="dropdown-item" href="user_Dashboard.html">
+                      <i class="material-icons">note_add</i> Dashboard</a>
+                    <a class="dropdown-item" href="#">
+                      <i class="material-icons"></i> Profile</a>
+                    <a class="dropdown-item" href="user_message.html">
+                      <i class="material-icons">vertical_split</i>Message</a>
+                    
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item text-danger" href="#">
+                      <i class="material-icons text-danger"></i> Logout </a>
+                  </div>
+                </li>
+
+
+              </ul>
+
+              <nav class="nav">
+                <a href="#" class="nav-link nav-link-icon toggle-sidebar d-md-inline d-lg-none text-center border-left" data-toggle="collapse" data-target=".header-navbar" aria-expanded="false" aria-controls="header-navbar">
+                  <i class="material-icons"></i>
+                </a>
+              </nav>
+            </nav>
+          </div>
+          <!-- / .main-navbar -->
+
+
+
+         <!--  <div class="alert alert-success alert-dismissible fade show mb-0" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <i class="fa fa-check mx-2"></i>
+            <strong>Success!</strong> Your profile has been updated! </div> -->
+
+          <div class="main-content-container container-fluid px-4">
+            <!-- Page Header -->
+
+            <div class="page-header row no-gutters py-4">
+              <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
+                <span class="text-uppercase page-subtitle">Overview</span>
+                <h3 class="page-title">User Profile</h3>
+              </div>
+            </div>
+
+            <!-- End Page Header -->
+            <!-- Default Light Table -->
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="card card-small mb-4 pt-3">
+                  <div class="card-header border-bottom text-center">
+                    <div class="mb-3 mx-auto">
+                      <img class="rounded-circle" src="assets/img/beach.jpg" alt="User Avatar" width="110"> </div>
+                    <h4 class="mb-0">Sitter's Name</h4>
+                    
+                    
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item p-4">
+                      <strong class="text-muted d-block mb-2">About Me</strong>
+                      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eaque, quidem, commodi soluta qui quae minima obcaecati quod dolorum sint alias, possimus illum assumenda eligendi cumque?</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="card card-small mb-4">
+                  <div class="card-header border-bottom">
+                    <h6 class="m-0">Account Details</h6>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item p-3">
+                      <div class="row">
+                        <div class="col">
+                          <form>
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="feFirstName">First Name</label>
+                                <input type="text" class="form-control" id="feFirstName" placeholder="First Name" value="Sitter"> </div>
+                              <div class="form-group col-md-6">
+                                <label for="feLastName">Last Name</label>
+                                <input type="text" class="form-control" id="feLastName" placeholder="Last Name" value="Sitter"> </div>
+                            </div>
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="feEmailAddress">Email</label>
+                                <input type="email" class="form-control" id="feEmailAddress" placeholder="Email" value="abc@example.com"> </div>
+                              <div class="form-group col-md-6">
+                                <label for="fePassword">Password</label>
+                                <input type="password" class="form-control" id="fePassword" placeholder="Password"> </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="feInputAddress">Address</label>
+                              <input type="text" class="form-control" id="feInputAddress" placeholder="1234 abc"> </div>
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="feInputCity">City</label>
+                                <input type="text" class="form-control" id="feInputCity"> </div>
+                              <div class="form-group col-md-4">
+                                <label for="feInputState">State</label>
+                                <input type="text" id="feInputState" class="form-control" placeholder="State">
+                                  
+                              </div>
+                              <div class="form-group col-md-2">
+                                <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip"> </div>
+                            </div>
+                            <div class="form-row">
+                              <div class="form-group col-md-12">
+                                <label for="feDescription">About Me</label>
+                                <textarea class="form-control" name="feDescription" rows="5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eaque, quidem, commodi soluta qui quae minima obcaecati quod dolorum sint alias, possimus illum assumenda eligendi cumque?</textarea>
+                              </div>
+                            </div>
+                            <button type="submit" class="btn btn-accent">Update Account</button>
+                          </form>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- End Default Light Table -->
+          </div>
+         
+        </main>
+      </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sharrre/2.0.1/jquery.sharrre.min.js"></script>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="assets/js/script.min.js"></script>
+    <script src="assets/js/user_dashboard_nav.min.js"></script>
+    <script src="assets/js/user_dashboard.min.js"></script>
+</body>
+
+</html>
